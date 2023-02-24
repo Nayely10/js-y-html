@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label>Euros</label>
+        <input type="text" id="euros"> 
+        <select name="" id="opciones">
+            <option value="Euros">Euros</option>
+            <option value="pesos">pesos</option>
+        </select>
+        
+            <label>pesos</label>
+            <input type="button" value="Calcular" onclick="cambio()">
+            <p id="resulatdo"></p>
+    </form>
+
+    <script>
+    function cambio(){
+        let euros=parseInt(document.getElementById('pesos').value);
+        let pesos =parseInt(document.getElementById('pesos').value);
+        let opcion=parseInt(document.getElementById('operaciones').value);
+
+        let resultado ; 
+        resulatdo = euros  / pesos ;
+        
+        
+        if(opciones=="Euros")
+        {
+            resulatdo = euros*51.11; 
+        }
+        else(opciones==pesos)
+        {
+            resulatdo = pesos/5100;
+        }
+        document.getElementById('resultado').innerHTML="El cambio es " + resultado;
+        }
+
+    </script>
+</body>
+</html>
